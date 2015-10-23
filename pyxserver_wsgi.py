@@ -122,7 +122,8 @@ def render_results(results):
     if errors:
         status = 'ERROR'
     elif results['correct']:
-        status = 'CORRECT'
+        #status = 'CORRECT'
+        status = results['msg']
 
     return results_template.format(status=status,
                                    errors=errors,
