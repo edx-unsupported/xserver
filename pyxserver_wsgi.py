@@ -123,7 +123,7 @@ def render_results(results):
     #    status = 'ERROR'
     #elif results['correct']:
     #     status = 'CORRECT'
-    status = results['msg']
+    status = results.get('msg','')
 
     return results_template.format(status=status,
                                    errors=errors,
