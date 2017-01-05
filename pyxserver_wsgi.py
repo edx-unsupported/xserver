@@ -118,11 +118,12 @@ def render_results(results):
 
     errors = format_errors(results['errors'])
 
-    status = 'INCORRECT'
-    if errors:
-        status = 'ERROR'
-    elif results['correct']:
-        status = 'CORRECT'
+    #status = 'INCORRECT'
+    #if errors:
+    #    status = 'ERROR'
+    #elif results['correct']:
+    #     status = 'CORRECT'
+    status = results.get('msg','')
 
     return results_template.format(status=status,
                                    errors=errors,
