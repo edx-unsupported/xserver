@@ -10,7 +10,7 @@ certifi==2019.11.28       # via requests
 chardet==3.0.4            # via requests
 colorama==0.4.3           # via rednose
 coverage==5.0.2           # via nosexcover
-django==1.4.22
+django==1.11.23
 django_nose==1.4.1
 dogstatsd-python==0.2.1
 gunicorn==0.17.4
@@ -22,6 +22,7 @@ nosexcover==1.0.11
 numpy==1.6.2
 path.py==10.0
 pika==1.1.0
+pytz==2019.3              # via django
 rednose==1.3.0
 requests==2.22.0
 south==1.0.2
